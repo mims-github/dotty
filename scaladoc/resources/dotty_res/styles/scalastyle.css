@@ -436,6 +436,8 @@ Same solution is already used in Dokka.
 /* Footer */
 footer {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   bottom: 0px;
   align-items: center;
   position: fixed;
@@ -448,17 +450,7 @@ footer {
 footer span.go-to-top-icon {
   background-color: white;
 }
-footer > span:first-child {
-  margin-left: 24px;
-  padding-left: 0;
-}
-footer > span:last-child {
-  margin-right: 24px;
-  padding-right: 0;
-}
-footer > span {
-  padding: 0 16px;
-}
+
 footer .padded-icon {
   padding-left: 0.5em;
 }
@@ -682,8 +674,6 @@ footer {
 }
 
 footer .socials {
-  margin-left: 10px;
-  margin-right: 10px;
   display: flex;
   align-items: center;
 }
@@ -699,7 +689,6 @@ footer .socials {
 }
 
 #generated-by {
-  margin-right: 20px;
   display: flex;
   align-items: center;
 }
@@ -733,6 +722,14 @@ footer .socials {
   }
   footer > span:last-child {
     margin-right: 12px;
+  }
+
+  footer {
+    position: unset;
+  }
+
+  .footer-text {
+    display: none;
   }
 }
 /* Portrait phones */
@@ -789,4 +786,10 @@ footer .socials {
 
 footer {
   background-color: white;
+}
+
+@media(max-height:640px) {
+  footer {
+    position: unset;
+  }
 }
