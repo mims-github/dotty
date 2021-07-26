@@ -1,3 +1,5 @@
 +task+ Test it
 
 --target test/* +Comment+ From a test source branch?
+
+--files PRCHECKLIST +task+ Checklist changed with team approval.
